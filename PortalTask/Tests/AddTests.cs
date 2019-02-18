@@ -20,7 +20,7 @@ namespace PortalTask.Tests
             //Can assert all json by one assert
             Assert.Multiple(() =>
             {
-                Assert.AreEqual(post.Title, response["title"].ToString(), "Check response param: body");
+                Assert.AreEqual(post.Title, response["title"].ToString(), "Check response param: title");
                 Assert.AreEqual(post.UserId, (int)response["userId"], "Check response param: userId");
                 Assert.AreEqual(post.Body, response["body"].ToString(), "Check response param: body");
                 Assert.AreEqual(_newPostId, (int)response["id"], "Check response param: id");

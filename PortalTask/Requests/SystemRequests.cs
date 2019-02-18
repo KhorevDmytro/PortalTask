@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
@@ -7,14 +6,14 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using PortalTask.Common;
 using PortalTask.DataProvider.Models;
-using PortalTask.Utils;
+using PortalTask.Utils.ApiClient;
 using PortalTask.Utils.Extensions;
 
 namespace PortalTask.Requests
 {
     public class SystemRequests
     {
-        private ApiClient _apiClient;
+        private IApiClient _apiClient;
 
         public SystemRequests()
         {

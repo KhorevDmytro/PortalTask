@@ -2,9 +2,9 @@
 using System.Net.Http;
 using System.Text;
 
-namespace PortalTask.Utils
+namespace PortalTask.Utils.ApiClient
 {
-    public class ApiClient
+    public class ApiClient : IApiClient
     {
         public HttpClient _client;
 
